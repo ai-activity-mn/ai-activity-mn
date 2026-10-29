@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Activity MN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<style>
+body{font-family:sans-serif; background:#0f172a; color:white; text-align:center; padding:20px}
+.card{background:white; color:black; padding:20px; border-radius:15px; max-width:400px; margin:20px auto}
+input,button{width:90%; padding:12px; margin:8px; border-radius:8px; border:1px solid #ccc}
+button{background:#2563eb; color:white; border:none; font-weight:bold}
+</style>
+</head>
+<body>
+<h1>AI Activity MN 🚀</h1>
+<p>By Nabeel - Live on Vercel</p>
+
+<div class="card">
+<h3>Login / Signup</h3>
+<input type="email" id="email" placeholder="Email likho">
+<input type="password" id="password" placeholder="Password likho">
+<button onclick="signup()">Signup</button>
+<button onclick="login()">Login</button>
+<button onclick="logout()">Logout</button>
+<p id="msg"></p>
+</div>
+
+<script>
+// Firebase Config - Aapka wala
+const firebaseConfig = {
+  apiKey: "AIzaSyC7a6Z6-b5vK2O8q5Y4x7Q1W2E3R4T5Y6U",
+  authDomain: "ai-activity-mn.firebaseapp.com",
+  projectId: "ai-activity-mn",
+  storageBucket: "ai-activity-mn.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdef"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+
+function signup(){
+  let e=document.getElementById('email').value;
+  let p=document.getElementById('password').value;
+  auth.createUserWithEmailAndPassword(e,p)
+  .then(()=>{document.getElementById('msg').innerText="Signup Ho Gaya! ✅"})
+  .catch((err)=>{document.getElementById('msg').innerText=err.message});
+}
+function login(){
+  let e=document.getElementById('email').value;
+  let p=document.getElementById('password').value;
+  auth.signInWithEmailAndPassword(e,p)
+  .then(()=>{document.getElementById('msg').innerText="Login Ho Gaya! Welcome Nabeel Bhai ✅"})
+  .catch((err)=>{document.getElementById('msg').innerText=err.message});
+}
+function logout(){
+  auth.signOut().then(()=>{document.getElementById('msg').innerText="Logout Ho Gaya"});
+}
+</script>
+</body>
+</html>
