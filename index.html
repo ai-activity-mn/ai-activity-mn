@@ -1,73 +1,123 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Activity MN - Presented By Mohammad Nabeel</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<title>AI Activity MN - 7 Din Me AI Seekhen | Mohammad Nabeel</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:'Poppins','Noto Nastaliq Urdu',sans-serif;background:linear-gradient(180deg,#0a1f0a,#14532d 50%,#052e16);color:white;min-height:100vh}
-.header{text-align:center;padding:30px 15px;background:rgba(0,0,0,0.35);backdrop-filter:blur(12px);border-bottom:3px solid #22c55e;position:sticky;top:0;z-index:10}
-.logo{font-size:34px;font-weight:800;background:linear-gradient(90deg,#22c55e,#86efac,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px;animation:glow 2s infinite alternate}
-@keyframes glow{from{filter:drop-shadow(0 0 10px #22c55e)} to{filter:drop-shadow(0 0 20px #86efac)}}
-.presented{margin-top:10px;font-size:15px;color:#facc15;font-weight:600;letter-spacing:1px}
-.sub{font-size:12px;color:#cbd5e1;margin-top:4px}
-.container{max-width:850px;margin:auto;padding:20px}
-.card{background:rgba(255,255,255,0.97);color:#1e293b;border-radius:20px;padding:22px;margin-top:22px;box-shadow:0 12px 35px rgba(0,0,0,0.4);border:1px solid rgba(34,197,94,0.2)}
-.card h2{color:#14532d;margin-top:0;text-align:center}
-.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
-.social-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:14px;text-decoration:none;color:white;font-weight:700;font-size:15px;transition:0.3s;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
-.social-btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 8px 25px rgba(0,0,0,0.3)}
-.yt{background:linear-gradient(135deg,#ff0000,#cc0000)} .tiktok{background:linear-gradient(135deg,#000000,#333333)} .wa{background:linear-gradient(135deg,#25D366,#128C7E)} .wa-group{background:linear-gradient(135deg,#128C7E,#075E54)}
-.story-text{line-height:2.1;font-family:'Noto Nastaliq Urdu',serif;font-size:20px;text-align:justify;color:#1e293b}
-.badge{display:inline-block;background:linear-gradient(90deg,#dcfce7,#bbf7d0);color:#14532d;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:12px;border:1px solid #22c55e}
-.footer{text-align:center;margin-top:30px;padding:20px;font-size:12px;opacity:0.8;line-height:1.6}
+:root{--green:#16a34a;--dark:#052e16;--yellow:#facc15;--bg:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Noto Nastaliq Urdu',serif;background:var(--bg);color:#1e293b;line-height:1.9}
+.header{background:linear-gradient(135deg,#052e16,#14532d);color:white;text-align:center;padding:35px 15px;position:relative;overflow:hidden}
+.header:before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(34,197,94,0.15) 0%,transparent 60%);animation:pulse 4s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)} 50%{transform:scale(1.1)}}
+.logo{font-family:'Poppins';font-size:36px;font-weight:800;letter-spacing:1px;position:relative}
+.logo span{background:linear-gradient(90deg,#22c55e,#86efac);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.presented{color:var(--yellow);font-size:16px;margin-top:8px;font-weight:600;position:relative}
+.container{max-width:900px;margin:auto;padding:20px}
+.card{background:white;border-radius:20px;padding:24px;margin:22px 0;box-shadow:0 8px 30px rgba(0,0,0,0.08);border:1px solid #e2e8f0}
+.card h2{margin:0 0 15px 0;color:var(--dark);font-size:26px;border-right:5px solid var(--green);padding-right:12px}
+.btn-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:16px 10px;border-radius:14px;text-decoration:none;color:white;font-weight:700;transition:0.3s;font-family:'Poppins'}
+.btn:hover{transform:translateY(-4px)}
+.yt{background:#ff0000} .tik{background:#000} .wa{background:#25D366}
+.intro-list{list-style:none;padding:0}
+.intro-list li{background:#f0fdf4;padding:12px 15px;border-radius:12px;margin:10px 0;border-right:4px solid var(--green);font-size:19px}
+.day-card{background:linear-gradient(135deg,#ffffff,#f0fdf4);border:2px solid #bbf7d0;border-radius:18px;padding:20px;margin:16px 0;position:relative;overflow:hidden}
+.day-number{position:absolute;left:15px;top:15px;background:var(--green);color:white;width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Poppins';font-weight:800;font-size:18px}
+.day-title{font-size:22px;font-weight:700;color:var(--dark);margin:0 0 8px 0;padding-left:50px}
+.day-desc{font-size:18px;color:#334155}
+.badge{display:inline-block;background:var(--green);color:white;padding:3px 10px;border-radius:20px;font-size:12px;font-family:'Poppins';margin-bottom:8px}
+.footer{text-align:center;padding:30px;background:var(--dark);color:#94a3b8;margin-top:30px;font-size:13px}
+@media(max-width:600px){.btn-grid{grid-template-columns:1fr} .logo{font-size:28px}}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="logo">🌿 AI ACTIVITY MN 🌿</div>
-  <div class="presented">Presented By Mohammad Nabeel</div>
-  <div class="sub">M Nabeel | AI Activity MN Official</div>
+  <div class="logo">🌿 AI ACTIVITY <span>MN</span> 🌿</div>
+  <div class="presented">Presented By Mohammad Nabeel | ایم نبیل</div>
+  <div style="margin-top:10px;font-size:13px;opacity:0.8">آسان اردو میں AI سیکھیں - زیرو سے ہیرو تک</div>
 </div>
 
 <div class="container">
 
-  <div class="card">
-    <h2>🔗 Official Links - میرے آفیشل لنکس</h2>
-    <div class="social-grid">
-      <a href="https://youtube.com/@aiactivity-mn?si=QbmnJ27lfsDwqzWK" class="social-btn yt" target="_blank">▶️ YouTube</a>
-      <a href="https://www.tiktok.com/@perdesilifesuadi?_r=1&_t=ZS-9Ayi3VgGI3o" class="social-btn tiktok" target="_blank">🎵 TikTok</a>
-      <a href="https://chat.whatsapp.com/F1DHY1RrozT9Mz7h4MteCA" class="social-btn wa" target="_blank">💬 WhatsApp</a>
-      <a href="https://chat.whatsapp.com/F1DHY1RrozT9Mz7h4MteCA" class="social-btn wa-group" target="_blank">👥 WhatsApp Group</a>
+  <!-- LINKS -->
+  <div class="card" style="text-align:center">
+    <h2>🔗 ہمارے آفیشل لنکس سے جڑیں</h2>
+    <div class="btn-grid">
+      <a href="https://youtube.com/@aiactivity-mn?si=QbmnJ27lfsDwqzWK" target="_blank" class="btn yt">▶️ YouTube<br><small style="font-weight:400">ویڈیوز دیکھیں</small></a>
+      <a href="https://www.tiktok.com/@perdesilifesuadi?_r=1&_t=ZS-9Ayi3VgGI3o" target="_blank" class="btn tik">🎵 TikTok<br><small style="font-weight:400">شارٹ ویڈیوز</small></a>
+      <a href="https://chat.whatsapp.com/F1DHY1RrozT9Mz7h4MteCA" target="_blank" class="btn wa">💬 WhatsApp<br><small style="font-weight:400">گروپ جوائن کریں</small></a>
     </div>
   </div>
 
+  <!-- AI KYA HAI -->
   <div class="card">
-    <span class="badge">✨ Daily AI Story - روزانہ کہانی</span>
-    <h2>جنگل کی خاموش خوبصورتی</h2>
-    <div class="story-text">
-      <p>
-        صبح کا وقت تھا، سورج کی پہلی کرنیں گھنے درختوں کے پتوں سے چھن کر زمین پر گر رہی تھیں۔ جنگل میں ایک عجیب سی خاموشی تھی، لیکن یہ خاموشی خالی نہیں تھی، اس میں زندگی بھری ہوئی تھی۔
-      </p>
-      <p>
-        پرندوں کی چہچہاہٹ، پتوں کی سرسراہٹ، اور دور کہیں بہتے ہوئے جھرنے کی آواز... سب مل کر ایک قدرتی موسیقی بنا رہے تھے۔ اونچے اونچے درخت ایسے لگ رہے تھے جیسے آسمان کو چھونے کی کوشش کر رہے ہوں۔ ان کی شاخوں پر بندر اچھل کود کر رہے تھے۔
-      </p>
-      <p>
-        ایک چھوٹا سا ہرن درختوں کے بیچ سے نکل کر پانی کے کنارے آیا۔ اس نے ادھر ادھر دیکھا، پھر آہستہ سے پانی پینے لگا۔ اس لمحے میں جنگل کی ساری خوبصورتی سمٹ آئی تھی - سکون، تحفظ، اور فطرت کا بے لوث پیار۔ یہ منظر بتا رہا تھا کہ فطرت سب سے بڑی مصور ہے۔
-      </p>
-      <p style="background:#f0fdf4;padding:12px;border-radius:10px;border-right:4px solid #22c55e">
-        <b>سبق / Lesson:</b> جنگل ہمیں سکھاتا ہے کہ اصل خوبصورتی شور میں نہیں، خاموشی میں ہے۔ جیسے درخت بغیر کسی غرض کے سایہ دیتے ہیں، ہمیں بھی دوسروں کے لیے فائدہ مند بننا چاہیے۔ یہی AI Activity MN کا پیغام ہے!
-      </p>
-    </div>
+    <h2>🤖 اے آئی (AI) کیا ہے؟ آسان الفاظ میں</h2>
+    <p style="font-size:19px">اے آئی کا مطلب ہے <b>مصنوعی ذہانت</b>۔ یعنی کمپیوٹر کو انسان کی طرح سوچنا سکھانا۔ جیسے آپ ChatGPT سے بات کرتے ہیں، تصویر بنواتے ہیں، ویڈیو بنواتے ہیں، یہ سب اے آئی ہے۔</p>
+    <ul class="intro-list">
+      <li>✅ <b>اے آئی سے پیسے کیسے کمائیں؟</b> آپ اے آئی سے یوٹیوب ویڈیو، ٹک ٹاک ویڈیو، لوگو ڈیزائن، اور فری لانسنگ کر سکتے ہیں۔</li>
+      <li>✅ <b>کیا اس کے لیے انگریزی ضروری ہے؟</b> نہیں! آپ اردو میں لکھ کر بھی اے آئی سے کام لے سکتے ہیں۔</li>
+      <li>✅ <b>کیا لیپ ٹاپ ضروری ہے؟</b> نہیں! صرف موبائل سے بھی آپ اے آئی کا سارا کام کر سکتے ہیں۔</li>
+    </ul>
   </div>
 
-  <div class="footer">
-    © 2026 AI ACTIVITY MN - Presented By Mohammad Nabeel<br>
-    AI Activity | M Nabeel Official | All Rights Reserved
+  <!-- 7 DIN COURSE -->
+  <div class="card" style="background:linear-gradient(135deg,#052e16,#14532d);color:white;border:none">
+    <h2 style="color:white;border-color:#22c55e">📚 7 دن میں AI سیکھیں - مکمل کورس</h2>
+    <p style="opacity:0.9">روزانہ ایک لیسن دیکھیں، پریکٹس کریں۔ 7 دن بعد آپ خود اے آئی ایکسپرٹ بن جائیں گے۔</p>
   </div>
 
+  <div class="day-card">
+    <div class="day-number">1</div><span class="badge">DAY 1</span>
+    <div class="day-title">دن 1: اے آئی کی دنیا میں پہلا قدم</div>
+    <div class="day-desc"><b>ٹاپک:</b> ChatGPT کیا ہے؟ اس پر اکاؤنٹ کیسے بنائیں؟<br><b>پریکٹس:</b> ChatGPT سے پوچھیں "مجھے جنگل کی خوبصورتی پر ایک کہانی لکھ کر دو"۔ آپ دیکھیں گے وہ کیسے لکھتا ہے۔ یہ آپ کا پہلا جادو ہے!</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-number">2</div><span class="badge">DAY 2</span>
+    <div class="day-title">دن 2: اے آئی سے تصویر بنانا</div>
+    <div class="day-desc"><b>ٹاپک:</b> تصویر بنانے والے ٹولز - Leonardo AI, Bing Image Creator<br><b>پریکٹس:</b> لکھیں "ایک خوبصورت جنگل، صبح کا وقت، ہرن پانی پی رہا ہے"۔ اے آئی آپ کو ایسی تصویر بنا کر دے گا جو آج تک کسی نے نہیں دیکھی!</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-number">3</div><span class="badge">DAY 3</span>
+    <div class="day-title">دن 3: اے آئی سے ویڈیو بنانا</div>
+    <div class="day-desc"><b>ٹاپک:</b> CapCut, Pika, InVideo سے ویڈیو<br><b>پریکٹس:</b> کل والی تصویر کو ویڈیو میں بدلیں۔ اس پر "جنگل کی آوازیں" لگائیں۔ آپ کی پہلی اے آئی ویڈیو تیار!</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-number">4</div><span class="badge">DAY 4</span>
+    <div class="day-title">دن 4: اے آئی سے آواز اور وائس اوور</div>
+    <div class="day-desc"><b>ٹاپک:</b> ElevenLabs سے آواز بنانا<br><b>پریکٹس:</b> اپنی کہانی کو اے آئی کی خوبصورت آواز میں بدلیں۔ اب آپ کو خود بولنے کی ضرورت نہیں۔</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-number">5</div><span class="badge">DAY 5</span>
+    <div class="day-title">دن 5: یوٹیوب اور ٹک ٹاک کے لیے کنٹینٹ</div>
+    <div class="day-desc"><b>ٹاپک:</b> اے آئی ویڈیو سے چینل کیسے چلائیں؟<br><b>پریکٹس:</b> ایک مکمل ویڈیو بنائیں: کہانی + تصویر + آواز = تیار۔ اسے اپنے چینل AI Activity MN جیسے چینل پر اپلوڈ کرنے کا طریقہ سیکھیں۔</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-number">6</div><span class="badge">DAY 6</span>
+    <div class="day-title">دن 6: اے آئی سے پیسے کمانا</div>
+    <div class="day-desc"><b>ٹاپک:</b> فری لانسنگ، لوگو، تھمب نیل بنانا<br><b>پریکٹس:</b> Fiverr پر جائیں، دیکھیں لوگ اے آئی لوگو کا 10 ڈالر لے رہے ہیں۔ آپ بھی بنا کر بیچ سکتے ہیں۔</div>
+  </div>
+
+  <div class="day-card" style="border-color:#facc15;background:linear-gradient(135deg,#fffbeb,#fef3c7)">
+    <div class="day-number" style="background:#f59e0b">7</div><span class="badge" style="background:#f59e0b">DAY 7 - FINAL</span>
+    <div class="day-title">دن 7: آپ اب ایکسپرٹ ہیں - اپنا برانڈ بنائیں</div>
+    <div class="day-desc"><b>ٹاپک:</b> اپنا نام بنانا جیسے "AI Activity MN"<br><b>پریکٹس:</b> آج سے روزانہ 1 ویڈیو بنائیں اور ہمارے واٹس ایپ گروپ میں بھیجیں۔ میں خود چیک کروں گا! آپ کا سفر شروع!</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 AI ACTIVITY MN - Presented By Mohammad Nabeel<br>
+  یوٹیوب | ٹک ٹاک | واٹس ایپ پر ہمیں فالو کریں<br>
+  <small>Design with ❤️ for Pakistan</small>
 </div>
 
 </body>
